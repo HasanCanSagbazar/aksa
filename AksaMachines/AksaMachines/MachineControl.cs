@@ -12,17 +12,23 @@ namespace AksaMachines
 {
     public partial class MachineControl : UserControl
     {
+        //public event EventHandler<EventArgs> MachineControlClicked;
         public MachineControl()
         {
             InitializeComponent();
+            //this.Click += machineControls_Clicked;
         }
 
         #region Properties
         private string machineId_ = "";
         private string machineName_ = "";
-        private string info2 = "";
-        private string info1 = "";  
+        public string holdingMachineId = "";
+        //public int machineControlClickCount = 0;
 
+        /*private void machineControls_Clicked(object sender, EventArgs e)
+        {
+            MachineControlClicked?.Invoke(this, EventArgs.Empty);
+        }*/
 
         [Category("Custom Props")]
         public string MachineId
@@ -38,19 +44,6 @@ namespace AksaMachines
             set { machineName_ = value; machineName_in.Text = value; }
         }
 
-        [Category("Custom Props")]
-        public string Info1
-        {
-            get { return info1; }
-            set { info1 = value; info1_in.Text = value; }
-        }
-
-        [Category("Custom Props")]
-        public string Info2
-        {
-            get { return info2; }
-            set { info2 = value; info2_in.Text = value; }
-        }
 
 
         #endregion

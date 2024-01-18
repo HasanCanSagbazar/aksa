@@ -10,11 +10,23 @@
     <Compile Update="EmployeeList.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="EnvanterEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="EnvaterPopUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="MachineControl.cs">
       <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Makine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Personel.cs">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 </Project>

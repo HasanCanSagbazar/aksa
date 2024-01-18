@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             loginTitle = new Label();
-            Id = new TextBox();
+            KullanıcıAdı = new TextBox();
             IdLabel = new Label();
             passwordLabel = new Label();
-            textBox1 = new TextBox();
+            PasswordBox = new TextBox();
             loginButton = new Button();
             passwordReset = new Label();
             SuspendLayout();
@@ -49,12 +49,12 @@
             loginTitle.TextAlign = ContentAlignment.MiddleCenter;
             loginTitle.Click += loginTitle_Click;
             // 
-            // Id
+            // KullanıcıAdı
             // 
-            Id.Location = new Point(97, 195);
-            Id.Name = "Id";
-            Id.Size = new Size(170, 23);
-            Id.TabIndex = 1;
+            KullanıcıAdı.Location = new Point(97, 195);
+            KullanıcıAdı.Name = "KullanıcıAdı";
+            KullanıcıAdı.Size = new Size(170, 23);
+            KullanıcıAdı.TabIndex = 1;
             // 
             // IdLabel
             // 
@@ -76,13 +76,13 @@
             passwordLabel.Text = "Şifre";
             passwordLabel.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // PasswordBox
             // 
-            textBox1.Location = new Point(97, 271);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(170, 23);
-            textBox1.TabIndex = 3;
-            textBox1.TextChanged += textBox1_TextChanged;
+            PasswordBox.Location = new Point(97, 271);
+            PasswordBox.Name = "PasswordBox";
+            PasswordBox.Size = new Size(170, 23);
+            PasswordBox.TabIndex = 3;
+            PasswordBox.TextChanged += textBox1_TextChanged;
             // 
             // loginButton
             // 
@@ -92,6 +92,7 @@
             loginButton.TabIndex = 5;
             loginButton.Text = "Giriş";
             loginButton.UseVisualStyleBackColor = true;
+            loginButton.Click += loginButton_Click;
             // 
             // passwordReset
             // 
@@ -114,9 +115,9 @@
             Controls.Add(passwordReset);
             Controls.Add(loginButton);
             Controls.Add(passwordLabel);
-            Controls.Add(textBox1);
+            Controls.Add(PasswordBox);
             Controls.Add(IdLabel);
-            Controls.Add(Id);
+            Controls.Add(KullanıcıAdı);
             Controls.Add(loginTitle);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Login";
@@ -129,10 +130,10 @@
         #endregion
 
         private Label loginTitle;
-        private TextBox Id;
+        private TextBox KullanıcıAdı;
         private Label IdLabel;
         private Label passwordLabel;
-        private TextBox textBox1;
+        private TextBox PasswordBox;
         private Button loginButton;
         private Label passwordReset;
     }

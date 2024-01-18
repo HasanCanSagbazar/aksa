@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AksaMachines")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e97426e893dd218c016df1b7119b0580bd091b31")]
 [assembly: System.Reflection.AssemblyProductAttribute("AksaMachines")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AksaMachines")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

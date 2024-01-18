@@ -32,10 +32,6 @@
             machineId_in = new Label();
             machineName_in = new Label();
             machineNameLabel = new Label();
-            info1_in = new Label();
-            info1Label = new Label();
-            info2_in = new Label();
-            info2Label = new Label();
             SuspendLayout();
             // 
             // machineIdLabel
@@ -74,57 +70,17 @@
             machineNameLabel.TabIndex = 2;
             machineNameLabel.Text = "Makine Adı";
             // 
-            // info1_in
-            // 
-            info1_in.AutoSize = true;
-            info1_in.Location = new Point(124, 219);
-            info1_in.Name = "info1_in";
-            info1_in.Size = new Size(22, 15);
-            info1_in.TabIndex = 5;
-            info1_in.Text = "---";
-            // 
-            // info1Label
-            // 
-            info1Label.AutoSize = true;
-            info1Label.Location = new Point(118, 204);
-            info1Label.Name = "info1Label";
-            info1Label.Size = new Size(37, 15);
-            info1Label.TabIndex = 4;
-            info1Label.Text = "Info 1";
-            // 
-            // info2_in
-            // 
-            info2_in.AutoSize = true;
-            info2_in.Location = new Point(124, 275);
-            info2_in.Name = "info2_in";
-            info2_in.Size = new Size(22, 15);
-            info2_in.TabIndex = 7;
-            info2_in.Text = "---";
-            // 
-            // info2Label
-            // 
-            info2Label.AutoSize = true;
-            info2Label.Location = new Point(118, 260);
-            info2Label.Name = "info2Label";
-            info2Label.Size = new Size(37, 15);
-            info2Label.TabIndex = 6;
-            info2Label.Text = "Info 2";
-            // 
             // MachineControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
-            Controls.Add(info2_in);
-            Controls.Add(info2Label);
-            Controls.Add(info1_in);
-            Controls.Add(info1Label);
+            BackColor = Color.SteelBlue;
             Controls.Add(machineName_in);
             Controls.Add(machineNameLabel);
             Controls.Add(machineId_in);
             Controls.Add(machineIdLabel);
             Name = "MachineControl";
-            Size = new Size(295, 437);
+            Size = new Size(295, 213);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -135,9 +91,5 @@
         private Label machineId_in;
         private Label machineName_in;
         private Label machineNameLabel;
-        private Label info1_in;
-        private Label info1Label;
-        private Label info2_in;
-        private Label info2Label;
     }
 }
